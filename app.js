@@ -82,8 +82,8 @@ app.put("/players/:playerId/", async (request, response) => {
   UPDATE
     cricket_team
   SET
-    playerName = '${playerName}',
-    jerseyNumber = ${jerseyNumber},
+    player_name = '${playerName}',
+    jersey_number = '${jerseyNumber}',
     role = '${role}'
   WHERE
     player_id = ${playerId};`;
